@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400|Roboto:400,700&display=swap");
+
+/* ページ全体のレイアウトに関する指定 */
+* {
+  box-sizing:border-box
+}
+
+body{
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000;
+  background-color: aquamarine;
+}
+
+/* base layout */
+#wrapper {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 15px;
+  min-height: 300px;
+}
+
+#input-form .input-text {
+  display: flex;
+  align-items: center;
+}
+
+#input-form .input-text + .input-text,
+#input-form .input-text + .submit {
+  margin-top: lrem;
+}
+
+/* 1st line */
+.input-text {
+  border: 1px solid #e6e6e6;
+  width: 6em;
+  line-height: 30px;
+  text-align: center;
+}
+
+.input-text label {
+  display: block;
+  padding: 0 lem;
+  width: Gem;
+}
+
+/* 残りの秒数に関する表示 */
+/* 2nd line */
+.input-text span{
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.input-text span + span {
+  margin-left: lem;
+}
+
+/* スタートボタン、ストップボタンに関する指定 */
+/* controls */
+.submit button{
+  margin: 0 0;
+  padding: 0 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: .5em;
+  line-height: 30px;
+  font-size: 16px;
+  transition: 0.1s all ease-in;
+}
+
+/* 隣り合うボタンの隙間 */
+.submit button + button {
+  margin-left: .2em;
+}
+
+.submit button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.submit button#start-button {
+  background: #1aaed3;
+  color: #ffffff;
+}
